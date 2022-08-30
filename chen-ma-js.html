@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Script tag Example 04</title>
+
+</head>
+<body>
+<!--    <button onclick="alert('hello CG');">Click here</button>-->
+    <p id="pTag">hello</p>
+    <button>Click Me!</button>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+
+    <script>
+        $(document).ready(function () {
+            $("button").click(function () {
+                // document.getElementById("pTag").innerHTML = "hello my friend";
+                // $("#pTag").text('hello my friend');
+
+                console.log($("p")[0])
+
+            });
+        });
+    </script>
+</body>
+</html>
